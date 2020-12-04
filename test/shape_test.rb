@@ -15,5 +15,9 @@ class ShapeTest < Minitest::Test
     assert_equal 'circle', @circle.name
     assert_equal 'radius 3', @circle.dimensions
   end
-  
+
+  def test_it_can_calculate_area
+    assert_equal 28.27, @circle.area
+  end
+
 end

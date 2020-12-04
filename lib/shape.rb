@@ -10,7 +10,7 @@ class Shape
   def calculate_area
     if @name == 'circle'
       radius = @dimensions.gsub('radius ', '').to_i
-      # require "pry"; binding.pry
+      @area = (Math::PI * (radius ** 2)).round(2) # this could be in abstracted out later
     end
   end
 end
