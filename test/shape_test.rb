@@ -8,6 +8,7 @@ class ShapeTest < Minitest::Test
     @square = Shape.new('square', '4 x 4')
     @rectangle = Shape.new('rectangle', '4 x 3')
     @triangle = Shape.new('triangle', 'a3 x b4 x c5')
+    @triangle2 = Shape.new('triangle', 'a2 x b2 x c2')
   end
 
   def test_it_exists
@@ -39,6 +40,7 @@ class ShapeTest < Minitest::Test
     assert_equal 'triangle', @triangle.name
     assert_equal 'a3 x b4 x c5', @triangle.dimensions
     assert_equal 6, @triangle.area
+    assert_equal 1.73, @triangle2.area
   end
 
 end
